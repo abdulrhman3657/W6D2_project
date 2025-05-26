@@ -6,11 +6,11 @@ function Navbar() {
   const nav_list = [
     {
       title: "home",
-      path: "/"
+      path: "home"
     },
     {
       title: "login",
-      path: "login"
+      path: "/"
     },
     {
       title: "signup",

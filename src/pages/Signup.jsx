@@ -9,6 +9,13 @@ function signup() {
   const [password, setPassword] = useState("");
   const [passwordConfirm, setPasswordConfirm] = useState("") 
 
+
+  let navigate = useNavigate();
+
+  function redirectPath(){
+      navigate("../")
+  }
+
   const checkInput = () => {
 
     // check username
@@ -71,8 +78,7 @@ function signup() {
   setPassword("")
   setPasswordConfirm("")
 
-  // const navigate = useNavigate()
-  // navigate("../login")
+  redirectPath()
 
   }
 

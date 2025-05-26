@@ -1,8 +1,15 @@
 import { useState } from 'react';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 import Swal from 'sweetalert2'
 
 function login() {
+
+
+  let navigate = useNavigate();
+
+  function redirectPath(){
+      navigate("home")
+  }
 
 
     const [email, setEmail] = useState("");
@@ -19,10 +26,11 @@ function login() {
           })
           
           setEmail("")
-          setPassword("")
+          setPassword("") 
 
           // const navigate = useNavigate()
           // navigate("../login")
+          redirectPath()  
           
       } else {
         Swal.fire({

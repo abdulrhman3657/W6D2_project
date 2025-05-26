@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Link } from "react-router";
+import { useNavigate } from "react-router";
 
 function Home() {
   const [weight, setWeight] = useState(0);
@@ -7,6 +7,16 @@ function Home() {
   const [BMI, setBMI] = useState(0);
   const [BMICategory, setBMICategory] = useState("");
   const [IMG, setIMG] = useState("");
+
+  let navigate = useNavigate();
+
+  function redirectPath(){
+      navigate("/login")
+  }
+
+  if(!localStorage.getItem("username")){
+    redirectPath()
+  }
 
   function checkInput() {
     const BMI = weight / (height * height);
