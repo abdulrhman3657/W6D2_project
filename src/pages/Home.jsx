@@ -32,10 +32,10 @@ function Home() {
   }
 
   return (
-    <div className="">
-      {/* <div>
-        <img src={IMG} alt="" />
-      </div> */}
+    <div className="flex justify-around">
+      <div>
+        {IMG && <img className="w-50" src={IMG} alt="" />}
+      </div>
       <div className="flex min-h-full flex-col justify-center px-6 py-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
           <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">
@@ -99,6 +99,7 @@ function Home() {
           </div>
         </div>
       </div>
+
     </div>
   );
 }
