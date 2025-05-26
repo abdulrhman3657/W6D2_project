@@ -130,7 +130,7 @@ function signup() {
           </div>
           <p className="mt-10 text-center text-sm/6 text-gray-500">
             Already signed up?
-            <Link to="../login" className="font-semibold text-indigo-600 hover:text-indigo-500"> login here</Link>
+            <Link to="../" className="font-semibold text-indigo-600 hover:text-indigo-500"> login here</Link>
           </p>
         </div>
       </div>
