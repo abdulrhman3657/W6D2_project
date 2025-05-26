@@ -26,10 +26,10 @@ function Home() {
       setIMG("UW.PNG");
     } else if (BMI >= 18.5 && BMI <= 24.9) {
       setBMICategory("normal weight");
-      setIMG("nW.PNG");
+      setIMG("NW.PNG");
     } else if (BMI >= 24.9 && BMI <= 29.9) {
       setBMICategory("Overweight");
-      setIMG("oW.PNG");
+      setIMG("OW.PNG");
     } else if (BMI >= 29.9 && BMI <= 34.9) {
       setBMICategory("Class I obesity");
       setIMG("OBESE1.PNG");
@@ -44,7 +44,7 @@ function Home() {
   return (
     <div className="flex justify-around">
       <div>
-        {IMG && <img className="w-50" src={IMG} alt="" />}
+        <img className="w-50" src={IMG} alt="" />
       </div>
       <div className="flex min-h-full flex-col justify-center px-6 py-6 lg:px-8">
         <div className="sm:mx-auto sm:w-full sm:max-w-sm">
