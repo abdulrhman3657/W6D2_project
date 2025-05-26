@@ -11,7 +11,7 @@ function Home() {
   let navigate = useNavigate();
 
   function redirectPath(){
-      navigate("/login")
+      navigate("/")
   }
 
   if(!localStorage.getItem("username")){
